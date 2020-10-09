@@ -1,5 +1,7 @@
 # FabLabVR
 
+**Version 1.0.0**
+
 ##  PARTICIPANTS : CHEIKNA LO, GOUBELLE LUCA, MICHAEL BENISON
 #### SUJET : 
   Ce projet consiste à créer une visite virtuelle interractive du Fablab de Corte en Réalité Virtuelle.
@@ -8,6 +10,7 @@
   de prendre connaissance des lieux directement sur une page d'un navigateur web avec son téléphone, 
   ordinateur où casque VR.
   
+---  
   
 #### CHOIX TECHNIQUES :
   La simulation de visite se faisant sur un navigateur, nous avons choisit la technologie ReactVR, car
