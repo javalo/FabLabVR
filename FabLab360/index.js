@@ -10,11 +10,14 @@ export default class FabLab360 extends React.Component {
   render() {
     return (
       <View style={styles.panel}>
+
         <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
             Welcome to FabLab 360
           </Text>
         </View>
+
+
       </View>
     );
   }
@@ -25,6 +28,7 @@ const styles = StyleSheet.create({
     // Fill the entire surface
     width: 1000,
     height: 600,
+    flexDirection: 'column',
     backgroundColor: 'rgba(255, 255, 255, 0.4)',
     justifyContent: 'center',
     alignItems: 'center',
