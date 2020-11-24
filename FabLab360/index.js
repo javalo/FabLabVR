@@ -1,36 +1,22 @@
 import React from 'react';
 import {
   AppRegistry,
-  asset,
-  Environment,
   StyleSheet,
   Text,
   View,
   VrButton
 } from 'react-360';
-import house from './data/houseData'
-import VideoModule from 'VideoModule'
 
+import VideoModule from 'VideoModule'
+import { connect, changeRoom } from './store'
 export  class Buttons extends React.Component {
 
    //player = VideoModule.createPlayer('myplayer');
-  state={
-    room: house.House.roomName,
-    info: house.House.info,
-    adjacentRooms: house.House.adjacentRooms,
-  }
 
-  clickHandler(roomSelection){
-      this.setState({
 
-       
-          room: house[`${roomSelection}`].roomName,
-          info: house[`${roomSelection}`].info,
-          adjacentRooms: house[`${roomSelection}`].adjacentRooms,
-      
-      })
-
-     
+  clickHandler(roomSelection){ 
+    changeRoom(roomSelection);
+   }
 /*      
 // Play a specific video
 this.player.play({
@@ -43,11 +29,6 @@ Environment.setBackgroundVideo('myplayer', {
 });
 
 */
-
-
-
-      Environment.setBackgroundImage(asset(`./360_${house[`${roomSelection}`].img}`));
-  }
 
   createRoomButtons(adjacentRooms){
     let rooms = adjacentRooms;
@@ -67,25 +48,14 @@ Environment.setBackgroundVideo('myplayer', {
       <View style={styles.panel}>
 
         <View style={styles.greetingBox}>
-          <Text >
+          <Text>
             Room Selection
           </Text>
           <Text>
-            { this.state.room}
+            { this.props.room}
           </Text>
-          {this.createRoomButtons(this.state.adjacentRooms)}
+          {this.createRoomButtons(this.props.adjacentRooms)}
         </View>
-
-
-        <View style={styles.greetingBox}>
-          <Text>
-            Room Info
-          </Text>
-          <Text >
-          {this.state.info}
-          </Text>
-        </View>
-
       </View>
     );
   }
@@ -93,24 +63,12 @@ Environment.setBackgroundVideo('myplayer', {
 
 
 
-export class InfoPanel extends React.Component {
+export class HouseInfoPanel extends React.Component {
 
   //player = VideoModule.createPlayer('myplayer');
- state={
-   room: house.House.roomName,
-   info: house.House.info,
-   adjacentRooms: house.House.adjacentRooms,
- }
+ 
 
- clickHandler(roomSelection){
-     this.setState({
 
-      
-         room: house[`${roomSelection}`].roomName,
-         info: house[`${roomSelection}`].info,
-         adjacentRooms: house[`${roomSelection}`].adjacentRooms,
-     
-     })
 
     
 /*      
@@ -126,45 +84,17 @@ Environment.setBackgroundVideo('myplayer', {
 
 */
 
-
-
-     Environment.setBackgroundImage(asset(`./360_${house[`${roomSelection}`].img}`));
- }
-
- createRoomButtons(adjacentRooms){
-   let rooms = adjacentRooms;
-   let buttons = [];
-
-   rooms.map(room =>(
-     buttons.push(<VrButton key={`${room}` + '-button'}
-     onClick={()=> this.clickHandler(room)}
-     >
-       <Text style={{backgroundColor:'green'}}>{room}</Text>
-     </VrButton>)
-   ));
-   return buttons;
- }
  render() {
    return (
      <View style={styles.panel}>
 
-       <View style={styles.greetingBox}>
-         <Text >
-           Room Selection
-         </Text>
-         <Text>
-           { this.state.room}
-         </Text>
-         {this.createRoomButtons(this.state.adjacentRooms)}
-       </View>
-
-
-       <View style={styles.greetingBox}>
+    
+       <View >
          <Text>
            Room Info
          </Text>
          <Text >
-         {this.state.info}
+         {this.props.info}
          </Text>
        </View>
 
@@ -173,8 +103,8 @@ Environment.setBackgroundVideo('myplayer', {
  }
 };
 
-
-
+const connectedButtons = connect(Buttons);
+const connectedHouseInfoPanel = connect(HouseInfoPanel);
 
 const styles = StyleSheet.create({
   panel: {
@@ -196,5 +126,5 @@ const styles = StyleSheet.create({
   
 });
 
-AppRegistry.registerComponent('Buttons', () => Buttons);
-AppRegistry.registerComponent('InfoPanel', () => InfoPanel);
+AppRegistry.registerComponent('connectedButtons', () => connectedButtons);
+AppRegistry.registerComponent('connectedHouseInfoPanel', () => connectedHouseInfoPanel);
