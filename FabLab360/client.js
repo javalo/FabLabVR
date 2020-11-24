@@ -1,7 +1,7 @@
 // This file contains the boilerplate to execute your React app.
 // If you want to modify your application's content, start in "index.js"
 
-import {ReactInstance} from 'react-360-web';
+import {ReactInstance, Surface} from 'react-360-web';
 import WebVRPolyfill from 'webvr-polyfill';
 const polyfill = new WebVRPolyfill();
 
@@ -12,10 +12,40 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
 
-  // Render your app content to the default cylinder surface
+
+  const buttonsPannel = new Surface(
+    400, 
+    550,
+     Surface.SurfaceShape.Flat
+     );
+
+     buttonsPannel.setAngle(
+      -0.6,
+      0.1
+    )
+
+
+     const infoPannel = new Surface(
+      400, 
+      550,
+       Surface.SurfaceShape.Flat
+       );
+
+    
+       infoPannel.setAngle(
+        0.6,
+        0.1
+      )
+
   r360.renderToSurface(
-    r360.createRoot('FabLab360', { /* initial props */ }),
-    r360.getDefaultSurface()
+    r360.createRoot('Buttons', { /* initial props */ }),
+    buttonsPannel
+  );
+
+
+  r360.renderToSurface(
+    r360.createRoot('InfoPanel', { /* initial props */ }),
+    infoPannel
   );
 
   // Load the initial environment
