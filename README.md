@@ -105,7 +105,7 @@ ont utilise e composant le composant XXX pour ZZZ
 
   ---  
   
-#### Comment configurer votre visite  :
+## Comment configurer votre visite  :
 
 ajouter les liens pour les video dans fablabdata.js avec comme format.. par exemple...
 
