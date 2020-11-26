@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Comment](#Comment)
+* [Comment](#Comment-configurer-votre-visite)
 
 
 **Version 1.0.0**
