@@ -45,24 +45,7 @@ limites comme si le visiteur se trouvait dans le batiment.
 
 --------
 
-#### titre Explication detaillées du code : 
-
-Nous avons plusieurs fichiers qui nous permettent de configurer le projet et de le faire 
-fonctionner.
-Fablabdate est le fichier qui permet de relier entre elle et ainsi être utiliser pour 
-la visite virtuelle du FabLab.
-Dans ce fichier chaque video est un objet qui a différents attributs et ces avec ces attributs
-que on peut gerer le component reactVR.
-Dans le fichier client.js vous allez retrouver les deux surfaces que vous pouvez voir en jaune
-pendant l'utilisation du projet.
-La première surface vous permet de choisir vos déplacements et la seconde vous donne des informations.
-Ces deux surfaces peuvent être gérés avec du code css.
-
-
-
-
-
-## Technologies
+## Detaillées du code
 Project is created with:
 * #### index.js: 
 C'est le code principal de votre application, c'est là que réside tout votre code React. C'est le code qui rend votre application unique et qui détermine son apparence. Tout code importé par index.jsfera également partie de votre application, vous permettant d'organiser votre application dans de nombreux fichiers différents.
@@ -72,6 +55,12 @@ C'est le code qui connecte votre navigateur à votre application React - le Runt
 
 * #### index.html: 
 Il s'agit de la page Web que vous chargez lors de la visualisation de votre application. Tout ce qu'il fait, c'est fournir un point pour monter votre code JavaScript. C'est intentionnel. La plupart des fonctionnalités sont laissées en dehors du HTML, de sorte que vous pouvez facilement intégrer votre application React 360 dans des pages de rendu serveur ou des applications Web existantes.
+
+
+* #### FabLabData.js: 
+cet ficher a ete ajouter pour nos propres besoin, ce fichier est tres import donc il y a les informations comme ( nom de sale, les details sur la salle et plus important les nom des video et les lien sans sans l'application de fonctionne pa.
+donc c'est  un fichier js qui contient des objects des Salles avec leurs noms,  videos , info qu ils contients et les lien ver les autre salles. 
+
 
 ---------
 
