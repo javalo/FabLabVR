@@ -64,7 +64,8 @@ Ces deux surfaces peuvent être gérés avec du code css.
 
 ## Technologies
 Project is created with:
-* index.js: C'est le code principal de votre application, c'est là que réside tout votre code React. C'est le code qui rend votre application unique et qui détermine son apparence. Tout code importé par index.jsfera également partie de votre application, vous permettant d'organiser votre application dans de nombreux fichiers différents.
+* #### index.js: 
+C'est le code principal de votre application, c'est là que réside tout votre code React. C'est le code qui rend votre application unique et qui détermine son apparence. Tout code importé par index.jsfera également partie de votre application, vous permettant d'organiser votre application dans de nombreux fichiers différents.
 
 * Ipsum version: 2.33
 * Ament library version: 999
