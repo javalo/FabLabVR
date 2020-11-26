@@ -12,7 +12,7 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
 
-
+//   ...options,
   const buttonsPannel = new Surface(
     400, 
     550,
