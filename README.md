@@ -1,6 +1,7 @@
 # FabLabVR
 
     ## Table of contents
+* [PARTICIPANTS](#PARTICIPANTS)
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
