@@ -1,5 +1,11 @@
 # FabLabVR
 
+    ## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+
 **Version 1.0.0**
 
 ##  PARTICIPANTS : CHEIKNA LO, GOUBELLE LUCA, MICHAEL BENISON
@@ -64,10 +70,6 @@ Ces liens sont des liens videos au format mp4.
   ---  
   --- 
 
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
 
 ## General info
 This project is simple Lorem ipsum dolor generator.
