@@ -30,7 +30,7 @@
   
   ---  
   
-  #### titre explication detaillées du fonctionnement :
+  ####  Detaillées du fonctionnement :
 
 On lance le projet et on se trouve dans la première salle de la visite virtuel du 
 FabLab de l'Université de Corse à Corte, nous avons un champ de visions à 360
@@ -49,11 +49,6 @@ limites comme si le visiteur se trouvait dans le batiment.
 Project is created with:
 * #### index.js: 
 C'est le code principal de votre application, c'est là que réside tout votre code React. C'est le code qui rend votre application unique et qui détermine son apparence. Tout code importé par index.jsfera également partie de votre application, vous permettant d'organiser votre application dans de nombreux fichiers différents.    
-       ###### Technologies
-            Project is created with:
-           * Lorem version: 12.3
-           * Ipsum version: 2.33
-           * Ament library version: 999
 
 * #### client.js: 
 C'est le code qui connecte votre navigateur à votre application React - le Runtime . Ce fichier fait trois choses. Tout d'abord, il crée une nouvelle instance de React 360, chargeant votre code React et l'attachant à un endroit spécifique dans le DOM. C'est également là que votre application peut passer une variété d'options d'initialisation
@@ -77,22 +72,5 @@ $ cd ../FabLab360
 $ npm install
 $ npm start
 ```
-    
-  
-#### Explication detaillées du fonctionnement :
-
-On entre dans le fablab et il se lance une vidéo permettant d'acceder à des choix pour aller dans des pieces..
-Capture d'ecran de l'image d'acceuil
-les choix sont conditionnels, il y a aussi une description...
-
-#### Explication detaillées du code :
-
-on utilise le composant 360 de react.js pour les videos, cela ce trouve dans client.js. 
-ont utilise e composant le composant XXX pour ZZZ
-
-  ---  
-  
-## Comment configurer votre visite
-
-ajouter les liens pour les video dans fablabdata.js avec comme format.. par exemple...
+     
 
