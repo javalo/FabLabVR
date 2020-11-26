@@ -23,7 +23,7 @@
   ---  
   ---  
   
-  ####titre explication detaillées du fonctionnement :
+  #### titre explication detaillées du fonctionnement :
 
 On lance le projet et on se trouve dans la première salle de la visite virtuel du 
 FabLab de l'Université de Corse à Corte, nous avons un champ de visions à 360
@@ -39,7 +39,7 @@ limites comme si le visiteur se trouvait dans le batiment.
 
 --------
 
-####titre Explication detaillées du code : 
+#### titre Explication detaillées du code : 
 
 Nous avons plusieurs fichiers qui nous permettent de configurer le projet et de le faire 
 fonctionner.
@@ -56,7 +56,7 @@ Ces deux surfaces peuvent être gérés avec du code css.
 
 ---------
 
-####titre Comment configurer votre visite : 
+#### titre Comment configurer votre visite : 
 
 On configure la visite avec des liens videos que l'on trouve sur le serveur de l'université.
 Ces liens sont des liens videos au format mp4.
