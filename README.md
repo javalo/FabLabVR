@@ -64,7 +64,7 @@ Ces liens sont des liens videos au format mp4.
   ---  
   --- 
 
-    ## Table of contents
+## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
