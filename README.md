@@ -61,11 +61,8 @@ Ces deux surfaces peuvent être gérés avec du code css.
 On configure la visite avec des liens videos que l'on trouve sur le serveur de l'université.
 Ces liens sont des liens videos au format mp4.
 
-  
-  
   ---  
   --- 
-  
 
     ## Table of contents
 * [General info](#general-info)
