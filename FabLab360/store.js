@@ -1,11 +1,14 @@
 import React from 'react';
 import { asset, Environment } from 'react-360';
-import house from './data/houseData';
+//import house from './data/houseData';
+import fab from './data/fabLabData';
 
+import VideoModule from 'VideoModule'
+player = VideoModule.createPlayer('myplayer');
 const State = {
-  room: house.House.roomName,
-  info: house.House.info,
-  adjacentRooms: house.House.adjacentRooms
+  room: fab.Fablab.roomName,
+  info: fab.Fablab.info,
+  adjacentRooms: fab.Fablab.adjacentRooms
 }
 
 const listeners = new Set();
@@ -20,12 +23,26 @@ export function changeRoom(roomSelection) {
   let roomName = roomSelection;
 
   State.room = roomName;
-  State.info = house[`${roomName}`].info;
-  State.adjacentRooms = house[`${roomName}`].adjacentRooms;
+  State.info = fab[`${roomName}`].info;
+  State.adjacentRooms = fab[`${roomName}`].adjacentRooms;
 
-  Environment.setBackgroundImage(asset(`./360_${house[`${roomName}`].img}`));
+ // Environment.setBackgroundImage(asset(`./360_${house[`${roomName}`].img}`));
+
+
+  this.player.play({
+    source: {url: `http://forefire.univ-corse.fr/brando/data/360/360_${fab[`${roomName}`].vid}`}, // provide the path to the video
+    muted: false // optionally, supply the format of the video
+  });
+  // Display the background video on the Environment
+  Environment.setBackgroundVideo('myplayer', {
+    rotateTransform: [{rotateY: '180deg'}] 
+  });
+
 
   updateComponents();
+
+
+
 }
 
 
