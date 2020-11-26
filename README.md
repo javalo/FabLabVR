@@ -67,8 +67,11 @@ Project is created with:
 * #### index.js: 
 C'est le code principal de votre application, c'est là que réside tout votre code React. C'est le code qui rend votre application unique et qui détermine son apparence. Tout code importé par index.jsfera également partie de votre application, vous permettant d'organiser votre application dans de nombreux fichiers différents.
 
-* Ipsum version: 2.33
-* Ament library version: 999
+* #### client.js: 
+C'est le code qui connecte votre navigateur à votre application React - le Runtime . Ce fichier fait trois choses. Tout d'abord, il crée une nouvelle instance de React 360, chargeant votre code React et l'attachant à un endroit spécifique dans le DOM. C'est également là que votre application peut passer une variété d'options d'initialisation
+
+* #### index.html: 
+Il s'agit de la page Web que vous chargez lors de la visualisation de votre application. Tout ce qu'il fait, c'est fournir un point pour monter votre code JavaScript. C'est intentionnel. La plupart des fonctionnalités sont laissées en dehors du HTML, de sorte que vous pouvez facilement intégrer votre application React 360 dans des pages de rendu serveur ou des applications Web existantes.
 
 ---------
 
