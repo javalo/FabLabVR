@@ -48,7 +48,12 @@ limites comme si le visiteur se trouvait dans le batiment.
 ## Detaillées du code
 Project is created with:
 * #### index.js: 
-C'est le code principal de votre application, c'est là que réside tout votre code React. C'est le code qui rend votre application unique et qui détermine son apparence. Tout code importé par index.jsfera également partie de votre application, vous permettant d'organiser votre application dans de nombreux fichiers différents.
+C'est le code principal de votre application, c'est là que réside tout votre code React. C'est le code qui rend votre application unique et qui détermine son apparence. Tout code importé par index.jsfera également partie de votre application, vous permettant d'organiser votre application dans de nombreux fichiers différents.    
+       ###### Technologies
+            Project is created with:
+           * Lorem version: 12.3
+           * Ipsum version: 2.33
+           * Ament library version: 999
 
 * #### client.js: 
 C'est le code qui connecte votre navigateur à votre application React - le Runtime . Ce fichier fait trois choses. Tout d'abord, il crée une nouvelle instance de React 360, chargeant votre code React et l'attachant à un endroit spécifique dans le DOM. C'est également là que votre application peut passer une variété d'options d'initialisation
@@ -63,24 +68,6 @@ donc c'est  un fichier js qui contient des objects des Salles avec leurs noms,  
 
 
 ---------
-
-#### titre Comment configurer votre visite : 
-
-On configure la visite avec des liens videos que l'on trouve sur le serveur de l'université.
-Ces liens sont des liens videos au format mp4.
-
-  ---  
-  --- 
-
-
-## General info
-This project is simple Lorem ipsum dolor generator.
-	
-## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
 	
 ## Setup
 Pour Installer le Projet Telecharger ou le cloner dans votre machine puis allez dans le dossier FabLab360 et lancer les commendes npm:
