@@ -29,7 +29,6 @@
   
   
   ---  
-  ---  
   
   #### titre explication detaillées du fonctionnement :
 
@@ -43,7 +42,6 @@ trouvons à l'instant t.
 Ces différents éléments nous permettent de faire une visite complète du batiment de
 manière virtuelle avec la possibilité de parcourir les différentes pièces sans aucunes 
 limites comme si le visiteur se trouvait dans le batiment.
-
 
 --------
 
@@ -83,7 +81,7 @@ Project is created with:
 * Ament library version: 999
 	
 ## Setup
-To run this project, install it locally using npm:
+Pour Installer le Projet Telecharger ou le cloner dans votre machine puis allez dans le dossier FabLab360 et lancer les commendes npm:
 
 ```
 $ cd ../FabLab360
