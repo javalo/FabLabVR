@@ -11,8 +11,6 @@ export default Fablab = {
       adjacentRooms: ['Enter_principale'],
     },
 
-
-
     Enter_principale: {
       roomName: 'Enter_principale' ,
       info: `
@@ -24,7 +22,7 @@ export default Fablab = {
 
       * Toolbox Outils traditionnels
       (Scie circulaire, scie plongeante, tour à bois...)`,
-      vid: 'enter_principale.mp4',
+      vid: 'output.mp4',
       adjacentRooms: ['Visite_impression_3D', 'Go_down_to_laser',  'Visite_atelier']
   
     },
