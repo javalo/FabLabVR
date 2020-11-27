@@ -69,11 +69,11 @@ Le Store.js acced aussi au donner qui se trouve dans le fichier FabLabData.js et
 
 ---------
 	
-## Comment Configurer votre prop visit
+## Comment Configurer votre propre visit
 En changeant just le fichier FabLabData.js, ce fichier est structuré avec des objets chaque est considérée comme une pièce qui contient le nom de la pièce la description et les pièces connectées a celle-ci ( les pièces connect sont les noms des videos )
 ##### Remarque : 
       les vidéos sont traiter dans Store.js, il sont de format mp4 ( nom_de_la_video.mp4 )
-       et commence pare le préfixe 360_ suivi du meme nom qui se trouve dans le fichier FabLabData.js
+       et commence par le préfixe 360_ suivi du même e nom qui se trouve dans le fichier FabLabData.js
 
 ---------
 	
