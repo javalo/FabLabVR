@@ -21,7 +21,7 @@
 ---  
   
 #### CHOIX TECHNIQUES :
-  La simulation de visite se faisant sur un navigateur, nous avons choisit la technologie ReactVR, car
+  La simulation de visite se faisant sur un navigateur, nous avons choisit la technologie React360, car
   il s'agit d'une technologie créé à partir de webXR et qu'elle convient au support que l'on va utiliser.
   
   On a fait le choix d'utiliser une caméra de modèle GEAR360 de SAMSUNG, afin de pouvoir filmer la 
@@ -66,6 +66,13 @@ donc c'est  un fichier js qui contient des objects des Salles avec leurs noms,  
 Ce fichier nous permet de suivre le click des boutons, ce qu'il faut afficher et comment changer le background avec la video qu'il faut.
 Le Store.js acced aussi au donner qui se trouve dans le fichier FabLabData.js et store les objets dans un globale store ( STATE ) qui contient les donners comme le nnom de la salle, la description et les salles connect a celui ci. 
 
+
+---------
+	
+## Comment Configurer votre prop visit
+En changeant just le fichier FabLabData.js, ce fichier est structuré avec des objets chaque est considérée comme une pièce qui contient le nom de la pièce la description et les pièces connectées a celle-ci ( les pièces connect sont les noms des videos )
+##### Remarque : 
+      les vidéos sont traiter dans Store.js, il sont de format mp4 ( nom_de_la_video.mp4 ) et commence pare le préfixe 360_ suivi du meme nom qui se trouve dqns le       fichier FabLabData.js
 
 ---------
 	
