@@ -58,8 +58,13 @@ Il s'agit de la page Web que vous chargez lors de la visualisation de votre appl
 
 
 * #### FabLabData.js: 
-cet ficher a ete ajouter pour nos propres besoin, ce fichier est tres import donc il y a les informations comme ( nom de sale, les details sur la salle et plus important les nom des video et les lien sans sans l'application de fonctionne pa.
+Ce ficher a ete ajouter pour nos propres besoin, ce fichier est tres import donc il y a les informations comme ( nom de sale, les details sur la salle et plus important les nom des video et les lien sans sans l'application de fonctionne pa.
 donc c'est  un fichier js qui contient des objects des Salles avec leurs noms,  videos , info qu ils contients et les lien ver les autre salles. 
+
+
+* #### Store.js: 
+Ce fichier nous permet de suivre le click des boutons, ce qu'il faut afficher et comment changer le background avec la video qu'il faut.
+Le Store.js acced aussi au donner qui se trouve dans le fichier FabLabData.js et store les objets dans un globale store ( STATE ) qui contient les donners comme le nnom de la salle, la description et les salles connect a celui ci. 
 
 
 ---------
