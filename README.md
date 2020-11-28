@@ -86,5 +86,5 @@ $ npm install
 $ npm start
 ```
 
-## démonstration sur youtube 
+## Démonstration sur youtube ( lien vers la vidéo )
 https://www.youtube.com/watch?v=d51KQuF39PM
